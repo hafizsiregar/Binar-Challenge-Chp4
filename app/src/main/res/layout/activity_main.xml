@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_judul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="264dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemain 1"
+            android:textColor="@color/teal_700"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img_gunting1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_gunting" />
+
+        <ImageView
+            android:id="@+id/img_batu1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_batu" />
+
+        <ImageView
+            android:id="@+id/ic_kertas1"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_kertas" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_versus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:src="@drawable/ic_versus"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemain 2"
+            android:textColor="@color/teal_700"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img_gunting2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_gunting" />
+
+        <ImageView
+            android:id="@+id/img_batu2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_batu" />
+
+        <ImageView
+            android:id="@+id/img_kertas2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_kertas" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_refresh"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
